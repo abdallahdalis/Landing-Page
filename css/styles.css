@@ -3881,10 +3881,17 @@ input[type="button"].btn--primary:focus {
  * # resume 
  *
  * ------------------------------------------------------------------- */
-.s-resume {
-    background-color: white;
+ .s-resume {
+    --color-border: var(--color-gray-16);
+    background-color: var(--color-gray-17);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.s-resume h3 {
+    margin-top: 0;
+    color: white;
 }
 
 .s-resume__section {
@@ -3947,7 +3954,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .s-resume {
-        padding-top: var(--vspace-4);
+        padding-top: var(--vspace-5);
     }
     .s-resume__section .column:first-child {
         text-align: center;
