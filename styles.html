@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Styles - Ceevee 2.0</title>
+    <title>Abdallah Dalis Portfolio</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -18,25 +18,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
 
-    <style type="text/css" media="screen">
-        .s-styles { 
-            background-color: white;
-            padding-top: calc(4.5 * var(--space));
-            padding-bottom: calc(4.5 * var(--space));
-            position: relative;
-        }
-        .s-styles .intro h1 {
-            margin-top: 0;
-        }
-    </style>
-
     <!-- script
     ================================================== -->
     <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.jpg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
@@ -59,11 +47,11 @@
         <div class="row s-header__nav-wrap">
             <nav class="s-header__nav">
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#resume">Resume</a></li>
-                    <li><a href="index.html#portfolio">Works</a></li>
-                    <li><a href="index.html#contact">Say Hello</a></li>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Experiences</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
                 </ul>
             </nav>
         </div> <!-- end row -->
@@ -85,21 +73,17 @@
 
                 <div class="s-hero__content-about">
 
-                    <h1>I'm Jonathan Doe.</h1>
+                    <h1>I'm Abdallah Dalis.</h1>
 
                     <h3>
-                    I'm a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
-                    effective visual identities for companies of all sizes around the globe. Let's <a href="#about">start scrolling</a>
-                    and learn more <a href="#about">about me</a>.
+                    I'm a Chicago Based <span>data scientist</span>, <span> analyst</span> and <span>engineer</span> depicting the next best business move for me and my team. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>.
                     </h3>
 
                     <div class="s-hero__content-social">
-                        <a href="#0"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a>
-                        <a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/abdallahdalis"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/abdallahdalis/followers/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/abdallahdalis/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     </div>
 
                 </div> <!-- end s-hero__content-about -->
@@ -108,7 +92,7 @@
         </div> <!-- s-hero__content -->
 
         <div class="s-hero__scroll">
-            <a href="#styles" class="s-hero__scroll-link smoothscroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
                 <span class="scroll-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
                 </span>
@@ -119,647 +103,337 @@
     </section> <!-- end s-hero -->
 
 
-    <!-- s-styles
+    <!-- about
     ================================================== -->
-    <section id="styles" class="s-styles">
+    <section id="about" class="s-about target-section">
 
         <div class="row">
-
-            <div class="column large-12 intro">
-
-                <h1>Style Guide.</h1>
-
-                <p class="lead">Lorem ipsum Officia elit ad tempor dolore est ex incididunt incididunt occaecat culpa deserunt 
-                sunt labore in cillum ullamco magna in Excepteur consequat in reprehenderit proident mollit incididunt officia commodo.
-                Duis ea officia sed dolor pariatur enim dolore dolore quis incididunt nulla exercitation commodo veniam et ea incididunt.
-                </p>
-
-                <hr class="fancy">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/user-06.jpg" alt="">
             </div>
-
-        </div> <!-- end row -->
-
-        <div class="row">
-
-            <div class="column large-6 tab-12">
-
-                <h3>Paragraph and Image</h3>
-
-                <p><a href="#"><img width="120" height="120" class="h-pull-left" alt="sample-image" src="images/sample-image.jpg"></a>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.Cras id urna. Morbi 
-                tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, 
-                purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. 
-                Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id 
-                neque posuere nunc justo tempus leo. </p>
-
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
                 <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. 
-                Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. 
-                Donec mattis, purus nec placerat bibendum, dui pede condimentumodio, ac blandit ante orci ut diam.	
+                    I'm Abdallah Dalis, currently pursuing a BS in Mathematics and Computer Science with a Minor in Economics at UIC (grad. May 2025). With accolades including Dean's List and the J. Rex Toliver Distinguished Service award, my internships at Chicago Transit Authority and Duly Health and Care have honed my expertise in data analysis, machine learning, and predictive analytics. Explore my impactful projects in data engineering and advanced analytics on LinkedIn and GitHub.
                 </p>
 
-                <p>A <a href="#">link</a>,
-                <abbr title="this really isn't a very good description">abbrebation</abbr>,
-                <strong>strong text</strong>,
-                <em>em text</em>,
-                <del>deleted text</del>, and
-                <mark>this is a mark text.</mark>
-                <code>.code</code>
-                </p>
+                <hr>
 
-            </div>
-
-            <div class="column large-6 tab-12">
-
-                <h3>Drop Caps</h3>
-
-                <p class="drop-cap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
-                Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the 
-                necessary regelialia. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, 
-                euposuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, 
-                ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, 
-                lorem tellus eleifend magna, eget fringilla velit magna id neque.
-                </p>
-
-                <h3>Small Print</h3>
-
-                <p><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero.</small></p>
-
-            </div>
-
-        </div> <!-- end row -->
-
-        <div class="row">
-
-            <div class="column large-6 tab-12">
-
-                <h3 class="h-add-bottom">Pull Quotes</h3>
-
-                <p>
-                Perspiciatis nemo unde et nobis modi consequatur officia amet. Ut enim 
-                tenetur provident maiores. Perspiciatis asperiores incidunt sequi 
-                quisquam. Enim aut. 
-                </p>
-
-                <figure class="pull-quote">
-                    <blockquote>
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
                         <p>
-                        When you look in the eyes of grace, when you meet grace, 
-                        when you embrace grace, when you see the nail prints in 
-                        grace’s hands and the fire in his eyes, when you feel his 
-                        relentless love for you - it will not motivate you to sin. 
-                        It will motivate you to righteousness.
+                        Abdallah Dalis <br>
+                        Tinley Park, Illinois, USA <br>
+                        <a href="mailto:#0">dalisabdallah@gmail.com</a>
                         </p>
-
-                        <footer>
-                            <cite>Judah Smith</cite>
-                        </footer>
-                    </blockquote>
-                </figure>
-
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <button id="downloadButton" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download Resume
+                        </button>
+                    </div> 
+                </div>
             </div>
-
-            <div class="column large-6 tab-12">
-
-                <h3 class="h-add-bottom">Block Quotes</h3>
-
-                <blockquote cite="http://where-i-got-my-info-from.com">
-                    <p>
-                    For God so loved the world, that he gave his only Son, that whoever believes in 
-                    him should not perish but have eternal life. For God did not send his Son into 
-                    the world to condemn the world, but in order that the world might be 
-                    saved through him.
-                    </p>
-
-                    <footer>
-                        <cite>
-                            <a href="#0">John 3:16-17 ESV</a>
-                        </cite>
-                    </footer>
-
-                </blockquote>
-
-                <blockquote>
-                    <p>There is a God-shaped vacuum in the heart of each man which cannot be satisfied 
-                    by any created thing but only by God the Creator.</p>
-
-                    <footer>
-                        <cite>Blaise Pascal</cite>
-                    </footer>
-
-                </blockquote>
-
-            </div>
-
         </div> <!-- end row -->
 
-        <div class="row h-add-half-bottom">
+        
+        <script>
+            document.getElementById('downloadButton').addEventListener('click', function() {
+            window.open('https://script.google.com/macros/s/AKfycbz2INgBs5asPvw9TqyvaC83wjcSsoyVWMxwSHuLWs0l/dev'); // Replace with your web app URL
+            });
+        </script>
 
-            <div class="column large-6 tab-12">
+    </section> <!-- end s-about -->
 
-                <h3>Example Lists</h3>
 
-                <ol>
-                    <li>Here is an example</li>
-                    <li>of an ordered list.</li>
-                    <li>A parent list item.
-                        <ul>
-                            <li>one</li>
-                            <li>two</li>
-                            <li>three</li>
-                        </ul>
-                        </li>
-                        <li>A list item.</li>
-                    </ol>
-
-                <ul class="disc">
-                    <li>Here is an example</li>
-                    <li>of an unordered list.</li>
+   <!-- Resume Section -->
+<section id="resume">
+    <!-- Career Section -->
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Career</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
+                <div class="resume-block__header">
+                    <h4 class="h3">Chicago Transit Authority</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Data Analyst Intern</span> 
+                        <span class="resume-block__header-date">
+                            May 2024 - April 2025
+                        </span>
+                    </p>
+                </div>
+                <ul>
+                    <li>Improved Ventra revenue reconciliation accuracy by 20% through the development and implementation of advanced analytics algorithms, leveraging Oracle and Microsoft Access for database administration and AWS for scalable data processing and storage solutions.</li>
+                    <li>Reduced manual processing time by 25% and increased reporting accuracy by 15% by automating financial reporting and modeling using data mining, pattern recognition, VBA, and Excel Macros, leveraging real-time market data from Bloomberg Terminal.</li>
+                    <li>Handled cash flow forecasting and risk analysis, providing daily summaries of cash and investment positions for cash management.</li>
+                    <li>Developed a predictive analytics-driven Quarterly Investment Report using PowerPoint and Power BI for data visualization.</li>
                 </ul>
+            </div> <!-- end resume-block -->
+    
+            <div class="resume-block">
+                <div class="resume-block__header">
+                    <h4 class="h3">Headstarter AI</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Software Engineer Fellow</span> 
+                        <span class="resume-block__header-date">
+                            July 2024 - September 2024
+                        </span>
+                    </p>
+                </div>
+                <ul>
+                    <li>Enhanced inventory management efficiency by developing a web application with ReactJS, NextJS, and Firebase.</li>
+                    <li>Optimized user interaction and support by implementing AI-driven solutions using OpenAI and AWS.</li>
+                    <li>Increased user engagement and payment processing efficiency through the integration of StripeAPI.</li>
+                    <li>Delivered a final project that addressed a startup’s backlog, meeting business requirements and demonstrating team collaboration and technical proficiency.</li>
+                </ul>
+            </div> <!-- end resume-block -->
+    
+            <div class="resume-block">
+                <div class="resume-block__header">
+                    <h4 class="h3">Duly Health and Care</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Data Scientist Intern</span> 
+                        <span class="resume-block__header-date">
+                            May 2023 - August 2023
+                        </span>
+                    </p>
+                </div>
+                <ul>
+                    <li>Led a 5-member, cross-functional team to develop a Fee Schedule Automation Tool and Geographic Clinic Assignment using Python, Excel, SQL, and Power BI, increasing revenue opportunity detection by 20% and operational efficiency by 25%.</li>
+                    <li>Optimized clinic data with a structured tree format, improving query efficiency and workflows in SQL Server Management Studio.</li>
+                    <li>Utilized predictive analytics to identify at-risk patients with significant negative contribution margins.</li>
+                    <li>Implemented AI neural networks to analyze diagnosis codes, enhancing understanding of chronic conditions.</li>
+                    <li>Engaged in testing design, created unit tests, and documented processes and functions of the completed MVP.</li>
+                </ul>
+            </div> <!-- end resume-block -->
+    
+            <div class="resume-block">
+                <div class="resume-block__header">
+                    <h4 class="h3">Apple Inc</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Apple Certified iOS Technician</span> 
+                        <span class="resume-block__header-date">
+                            September 2022 - April 2024
+                        </span>
+                    </p>
+                </div>
+                <ul>
+                    <li>Engineered tailored technical support, assisting over 500+ clients monthly and maintaining a 95% customer satisfaction rate.</li>
+                    <li>Assisted clients in maximizing utilization of Apple’s hardware and software on their devices.</li>
+                    <li>Introduced new troubleshooting techniques and mentored 5 technicians, boosting team market standing by 15%.</li>
+                </ul>
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- end career section -->
+    
+    <!-- Education Section -->
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Education</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
+                <div class="resume-block__header">
+                    <h4 class="h3">University of Illinois at Chicago</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Bachelors in Mathematics and Computer Science & Minor in Economics</span> 
+                        <span class="resume-block__header-date">
+                            Graduation Date: May 2025
+                        </span>
+                    </p>
+                </div>
+                <ul>
+                    <li>Awards:
+                        <ul>
+                            <li>Dean's List (2022 - Present)</li>
+                            <li>Commitment to Diversity (2023)</li>
+                            <li>J. Rex Toliver Distinguished Service (2023)</li>
+                        </ul>
+                    </li>
+                    <li>Involvement:
+                        <ul>
+                            <li>GDSC Google Student Developer Club (2022 - Present)
+                                <ul>
+                                    <li>Committee Member and Hackathon Participant</li>
+                                </ul>
+                            </li>
+                            <li>Association of Computing and Machinery (2022 - Present)
+                                <ul>
+                                    <li>AppDev Special Interest Group, Back-End Lead</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- end education section -->
 
-                <h3>Definition Lists</h3>
-
-                <h5>a) Multi-line Definitions (default) </h5>
-
-                <dl class="dictionary-style">
-                    <dt><strong>This is a term</strong></dt>
-                        <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
-                    <dt><strong>Another Term</strong></dt>
-                        <dd>And it gets a definition too, which is this line</dd>
-                        <dd>This is a 2<sup>nd</sup> definition for a single term. A <code>dt</code> may be followed by multiple <code>dd</code>s.</dd>
-                </dl>
-
-                <h3 class="h-add-bottom">Skill Bars</h3>
-
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Skills</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
+                <p>My particular skillset includes much more than the following skills below, so these are more like my favorite tools to manipulate data, and present data in a fashion that brings solutions to many problems.</p>
                 <ul class="skill-bars-fat">
                     <li>
-                    <div class="progress percent85"></div>
-                    <strong>HTML</strong>
+                        <div class="progress percent85"></div>
+                        <strong>SQL</strong>
                     </li>
                     <li>
-                    <div class="progress percent85"></div>
-                    <strong>CSS</strong>
+                        <div class="progress percent85"></div>
+                        <strong>Excel</strong>
                     </li>
                     <li>
-                    <div class="progress percent65"></div>
-                    <strong>Javascript</strong>
+                        <div class="progress percent65"></div>
+                        <strong>R</strong>
                     </li>
                     <li>
-                    <div class="progress percent90"></div>
-                    <strong>Figma</strong>
+                        <div class="progress percent90"></div>
+                        <strong>Python</strong>
                     </li>
                     <li>
-                    <div class="progress percent75"></div>
-                    <strong>Illustrator</strong>
+                        <div class="progress percent75"></div>
+                        <strong>Power BI</strong>
                     </li>
                     <li>
-                    <div class="progress percent60"></div>
-                    <strong>Photoshop</strong>
+                        <div class="progress percent60"></div>
+                        <strong>Tableau</strong>
                     </li>
                 </ul>
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- s-resume__section -->
+</section> <!-- end s-resume -->
 
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
             </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
 
-            <div class="column large-6 tab-12">
+                    <p>
+                    My particular skillset include much more than the following skills below, so these are more like my favorite tools to manipulate data, and present data in a fashion that brings solutions to many problems. 
+                    </p>
 
-                <h3 class="h-add-bottom">Buttons</h3>
-
-                <p>
-                    <a class="btn btn--primary h-full-width" href="#0">Primary Button</a>
-                    <a class="btn h-full-width" href="#0">Default Button</a>
-                    <a class="btn btn--stroke h-full-width" href="#0">Stroke Button</a>
-                </p>
-
-                <h3>Stats Tabs</h3>
-
-                <ul class="stats-tabs">
-                    <li><a href="#0">1,234 <em>Peter</em></a></li>
-                    <li><a href="#0">567 <em>James</em></a></li>
-                    <li><a href="#0">23,456 <em>John</em></a></li>
-                    <li><a href="#0">3,456 <em>Andrew</em></a></li>
-                    <li><a href="#0">456 <em>Philip</em></a></li>
-                    <li><a href="#0">26 <em>Matthew</em></a></li>
-                </ul>
-
-                <h3 class="h-add-bottom">Code</h3>
-
-<pre><code class="language-css">
-    code {
-    font-size: 1.4rem;
-    margin: 0 .2rem;
-    padding: .2rem .6rem;
-    white-space: nowrap;
-    background: #F1F1F1;
-    border: 1px solid #E1E1E1;	
-    border-radius: 3px;
-    }
-</code></pre>
-
-            </div>
-
-        </div> <!-- end row -->
-
-        <div class="row h-add-half-bottom">
-
-            <div class="column large-6 tab-12">
-                    
-                <h1>H1 Heading</h1>
-                <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
-                Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
-
-                <h2>H2 Heading</h2>
-                <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
-                Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
-
-                <h3>H3 Heading</h3>
-                <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
-                Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
-
-                
-            </div>
-
-            <div class="column large-6 tab-12">
-                <h4>H4 Heading</h4>
-                <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
-                Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
-
-                <h5>H5 Heading</h5>
-                <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
-                Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
-
-                <h6>H6 Heading</h6>
-                <p>Doloremque dolor voluptas est sequi omnis. Pariatur ut aut. Sed enim tempora qui veniam qui cum vel. 
-                Voluptas odit at vitae minima. In assumenda ut. Voluptatem totam impedit accusantium reiciendis excepturi aut qui accusamus praesentium.</p>
-    
-                
-            </div>
-
-        </div> <!-- end row -->
-
-        <div class="row h-add-half-bottom">
-
-            <div class="column large-6 tab-12">
-
-                <h3 class="h-add-bottom">Responsive Image</h3>
-
-                <figure>
-                    <img src="images/wheel-500.jpg" 
-                    srcset="images/wheel-1000.jpg 1000w, 
-                    images/wheel-500.jpg 500w" 
-                    sizes="(max-width: 1000px) 100vw, 1000px" alt="">
-
-                    <figcaption>
-                        Here is some random picture.
-                    </figcaption>
-                </figure>
-
-            </div>
-
-            <div class="column large-6 tab-12">
-
-                <h3 class="h-add-bottom">Responsive video</h3>
-
-                <div class="video-container">
-                <iframe title="vimeo-player" src="https://player.vimeo.com/video/14592941" width="640" height="360" frameborder="0" allowfullscreen></iframe>                
-                </div>
-
-            </div>
-            
-        </div> <!-- end row -->
-
-        <div class="row h-add-bottom">
-
-            <div class="column large-12">
-
-                <h3>Tables</h3>
-                <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
-
-                <div class="table-responsive">
-
-                    <table>
-                            <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Sex</th>
-                                <th>Location</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>William J. Seymour</td>
-                                <td>34</td>
-                                <td>Male</td>
-                                <td>Azusa Street</td>
-                            </tr>
-                            <tr>
-                                <td>Jennie Evans Moore</td>
-                                <td>30</td>
-                                <td>Female</td>
-                                <td>Azusa Street</td>
-                            </tr>
-                            </tbody>
-                    </table>
-
-                </div>
-
-            </div>
-            
-        </div> <!-- end row -->
-
-        <div class="row">
-
-            <div class="column large-12">
-                <h3>Pagination</h3>
-
-                <nav class="pgn">
-                    <ul>
+                    <ul class="skill-bars-fat">
                         <li>
-                            <a class="pgn__prev" href="#0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293L8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"/></svg>
-                            </a>
+                        <div class="progress percent85"></div>
+                        <strong>SQL</strong>
                         </li>
-                        <li><a class="pgn__num" href="#0">1</a></li>
-                        <li><span class="pgn__num current">2</span></li>
-                        <li><a class="pgn__num" href="#0">3</a></li>
-                        <li><a class="pgn__num" href="#0">4</a></li>
-                        <li><a class="pgn__num" href="#0">5</a></li>
-                        <li><span class="pgn__num dots">…</span></li>
-                        <li><a class="pgn__num" href="#0">8</a></li>
                         <li>
-                            <a class="pgn__next" href="#0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11.293 17.293l1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/></svg>
-                            </a>
+                        <div class="progress percent85"></div>
+                        <strong>Excel</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent65"></div>
+                        <strong>R</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent90"></div>
+                        <strong>Python</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent75"></div>
+                        <strong>Power BI</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent60"></div>
+                        <strong>Tableau</strong>
                         </li>
                     </ul>
-                </nav>
+
+                </div> <!-- end resume-block -->
+
             </div>
+        </div> <!-- s-resume__section -->
 
-        </div> <!-- end row -->
+    </section> <!-- end s-resume -->
 
 
-        <div class="row">
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
 
-            <div class="column large-6 tab-12">
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Latest Creations</h3>
+            </div>
+        </div>
 
-                <h3 class="h-add-bottom">Form Styles</h3>
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h4>What's to Come:</h4>
+                <ul>
+                    <li>5 AI Projects from Headstarter AI</li>
+                    <li>Video Recommendations Algorithm</li>
+                    <li>Move Smart Project</li>
+                    <li>UIC Data Structures and Algorithms Projects</li>
+                    <li>Graph Theory Projects</li>
+                </ul>
+            </div>
+        </div>
 
-                <form>
-                    <div>
-                        <label for="sampleInput">Your email</label>
-                        <input class="h-full-width" type="email" placeholder="test@mailbox.com" id="sampleInput">
-                    </div>
-                    <div>
-                        <label for="sampleRecipientInput">Reason for contacting</label>
-                        <div class="ss-custom-select">
-                            <select class="h-full-width" id="sampleRecipientInput">
-                                <option value="Option 1">Questions</option>
-                                <option value="Option 2">Report</option>
-                                <option value="Option 3">Others</option>
-                            </select>
+
+    </section> <!-- end s-portfolio -->
+   
+
+ <!-- contact
+    ================================================== -->
+<section id="contact" class="s-contact target-section">
+
+    <div class="row s-contact__header">
+        <div class="column large-12">
+            <h3 class="section-header-allcaps">Say Hello</h3>
+        </div>
+    </div>
+
+    <div class="row s-contact__content">
+
+        <div class="column large-12 medium-12">
+            <h4 class="huge-text">
+                Have a new project in mind? Let's collaborate and build something awesome.
+                Let's turn that idea into an even greater product :)
+            </h4>
+        </div>
+
+        <div class="column large-12 medium-12">
+            <div class="container" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                <form action="action_page.php" style="flex: 1;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                        <div style="flex: 1; min-width: 200px;">
+                            <label for="fname" style="font-size: 18px;">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." 
+                                   style="width: 100%; padding: 12px; font-size: 18px;">
+                        </div>
+                        <div style="flex: 1; min-width: 200px;">
+                            <label for="lname" style="font-size: 18px;">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." 
+                                   style="width: 100%; padding: 12px; font-size: 18px;">
                         </div>
                     </div>
-                    
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="h-full-width" placeholder="Your message" id="exampleMessage"></textarea>
 
-                    <label class="h-add-bottom">
-                        <input type="checkbox">
-                        <span class="label-text">Send a copy to yourself</span>
-                    </label>
-                
-                    <input class="btn--primary h-full-width" type="submit" value="Submit">
+                    <label for="subject" style="font-size: 18px; margin-top: 20px;">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." 
+                              style="width: 100%; height: 200px; padding: 12px; font-size: 18px;"></textarea>
+
+                    <input type="submit" value="Submit" style="margin-top: 20px; padding: 12px 20px; font-size: 18px;">
                 </form>
-
-            </div>
-
-            <div class="column large-6 tab-12">
-
-                <h3>Alert Boxes</h3>
-
-                <br>
-                
-                <div class="alert-box alert-box--error">
-                    <p>Error Message. Your Message Goes Here.</p>
-                    <span class="alert-box__close"></span>
-                </div><!-- end error -->
-                        
-                <div class="alert-box alert-box--success">
-                    <p>Success Message. Your Message Goes Here.</p>
-                    <span class="alert-box__close"></span>
-                </div><!-- end success -->
-                        
-                <div class="alert-box alert-box--info">
-                    <p>Info Message. Your Message Goes Here.</p>
-                    <span class="alert-box__close"></span>
-                </div><!-- end info -->
-                        
-                <div class="alert-box alert-box--notice">
-                    <p>Notice Message. Your Message Goes Here.</p>
-                    <span class="alert-box__close"></span>
-                </div><!-- end notice -->
-            
-            </div>
-
-        </div> <!-- end row -->
-
-        <div class="row">
-
-            <div class="large-12 column">
-               <h3 class="h-add-bottom">Grid Columns Samples</h3>
-            </div>
-   
-        </div> <!-- Row End-->
-
-
-        <div class="row">
-   
-            <div class="large-4 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-             </div>
-   
-            <div class="large-4 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-            <div class="large-4 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-        </div>
-   
-        <div class="row">
-   
-            <div class="large-3 tab-6 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-            <div class="large-3 tab-6 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-            <div class="large-3 tab-6 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-            <div class="large-3 tab-6 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-        </div>
-   
-        <div class="row">
-   
-            <div class="large-6 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-            <div class="large-6 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-        </div>
-   
-        <div class="row">
-   
-            <div class="large-8 tab-7 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor.
-                </p>
-            </div>
-   
-            <div class="large-4 tab-5 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. 
-                </p>
-            </div>
-   
-         </div>
-   
-         <div class="row">
-   
-            <div class="large-3 tab-5 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at. 
-                </p>
-             </div>
-   
-            <div class="large-9 tab-7 mob-12 column">
-                <p>
-                Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor.Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
-                nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
-                faucibus at, tincidunt eget, porttitor non, dolor.
-                </p>
-             </div>
-   
-         </div> 
-
-    </section> <!-- end s-styles -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="row s-contact__header">
-            <div class="column large-12">
-                <h3 class="section-header-allcaps">Say Hello</h3>
             </div>
         </div>
 
-        <div class="row s-contact__content">
+    </div> <!-- s-contact__content -->
 
-            <div class="column large-7 medium-12">
-
-                <h4 class="huge-text">
-                Have a new project in mind? Let's collaborate and build something awesome. 
-                Let's turn that idea to an even greater product :)
-                </h4>
-
-            </div>
-
-            <div class="column large-4 medium-12">
-
-                <div class="row contact-infos">
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Email
-                            </h5>
-                            <p class="contact-block__content">
-                                <a class="mailtoui" href="mailto:sayhello@ceevee.com">sayhello@ceevee.com</a>
-                            </p>
-                        </div> <!-- end contact-block -->
-                    </div>
-                    <div class="column large-12 medium-6 tab-12">
-                        <div class="contact-block">
-                            <h5 class="contact-block__header">
-                                Phone
-                            </h5>
-                            <p class="contact-block__content">
-                                <a href="tel:+1975432345">+197 543 2345</a>
-                            </p>
-                        </div> <!-- end contact-block -->
-                    </div>
-
-                    <div class="column large-12">
-                        <a href="mailto:sayhello@ceevee.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
-                    </div>
-                </div> <!-- end contact-infos -->
-
-            </div>
-        </div> <!-- s-contact__content -->
-
-    </section> <!-- end s-contact -->
+</section> <!-- end s-contact -->
     
 
     <!-- footer
@@ -768,19 +442,13 @@
         <div class="row">
             <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
                 <ul class="s-footer__social">
-                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/abdallahdalis"><i class="fab fa-github-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/abdallahdalis/followers/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/abdallahdalis/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
 
-            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
-                <span>© Copyright Ceevee 2021</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div>
-        </div>
+            
 
         <div class="ss-go-top">
             <a class="smoothscroll" title="Back to Top" href="#top">
