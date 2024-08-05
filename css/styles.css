@@ -3875,92 +3875,122 @@ input[type="button"].btn--primary:focus {
         display: none;
     }
 }
-
-
 /* ===================================================================
  * # resume 
- *
  * ------------------------------------------------------------------- */
  .s-resume {
     --color-border: var(--color-gray-16);
-    background-color: var(--color-gray-17);
+    background-color: #ffffff; /* Set the background color to white */
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
-    color: rgba(255, 255, 255, 0.4);
+    color: #000000; /* Set the default text color to black */
+    position: relative; /* For positioning timeline elements */
 }
 
 .s-resume h3 {
     margin-top: 0;
-    color: white;
+    color: #000000; /* Set the header text color to black */
 }
 
-.s-resume__section {
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: var(--vspace-0_75);
-    margin-bottom: var(--vspace-2_5);
+/* Timeline Container */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 80%; /* Adjust as needed */
+    background-color: #ffffff; /* Ensure the timeline background is white */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
 }
 
-.s-resume__section:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #000000; /* Timeline line color */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px; /* Half of the width */
 }
 
-/* ------------------------------------------------------------------- 
- * ## resume block
- * ------------------------------------------------------------------- */
-.resume-block {
-    margin-bottom: var(--vspace-1_75);
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    width: 50%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
 }
 
-.resume-block h4 {
-    line-height: 1.080;
-    margin-top: 0;
-    margin-bottom: var(--vspace-0_25);
+.timeline-item:nth-child(odd) {
+    left: 0;
 }
 
-.resume-block__header-meta {
-    font-family: var(--font-2);
-    font-size: calc(var(--text-size) * 1.1111);
-    font-style: italic;
-    margin-top: -.4rem;
-    margin-bottom: var(--vspace-0_75);
+.timeline-item:nth-child(even) {
+    left: 50%;
 }
 
-.resume-block__header-meta span:first-child {
-    margin-right: .6rem;
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #000000; /* Dot color */
+    top: 20px;
+    left: -12px; /* Adjust as needed */
+    z-index: 1;
 }
 
-.resume-block__header-date {
-    display: inline-block;
-    font-family: var(--font-1);
-    font-size: calc(var(--text-size) * 0.8889);
-    font-size: var(--text-sm);
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    color: var(--color-text-light);
+.timeline-item:nth-child(even)::before {
+    left: auto;
+    right: -12px; /* Adjust as needed */
 }
 
-.resume-block__header-date::before {
-    content: "\2022";
-    color: var(--color-text);
-    margin-right: .2rem;
+.timeline-item-content {
+    padding: 20px;
+    background-color: #ffffff; /* Card background */
+    border: 1px solid #000000; /* Card border color */
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    color: #000000; /* Card text color */
+    position: relative;
+    opacity: 0; /* Hide the content initially */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * resume
- * ------------------------------------------------------------------- */
+/* Hover Effect */
+.timeline-item:hover .timeline-item-content {
+    opacity: 1; /* Show content on hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+.company-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
 @media screen and (max-width: 800px) {
-    .s-resume {
-        padding-top: var(--vspace-5);
+    .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .s-resume__section .column:first-child {
-        text-align: center;
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline::after {
+        left: 31px; /* Adjust for mobile view */
     }
 }
-
 
 /* ===================================================================
  * # portfolio
@@ -4220,180 +4250,6 @@ input[type="button"].btn--primary:focus {
     }
 }
 
-
-/* ===================================================================
- * # testimonials
- *
- * ------------------------------------------------------------------- */
-.s-testimonials {
-    padding-top: var(--vspace-5);
-    padding-bottom: var(--vspace-3_5);
-    color: rgba(255, 255, 255, 0.8);
-    background-color: var(--color-gray-19);
-    overflow: hidden;
-    position: relative;
-}
-
-.s-testimonials__bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/testimonials-bg-3000.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.s-testimonials__bg::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-gray-19);
-    opacity: .8;
-}
-
-.s-testimonials h3 {
-    margin-top: 0;
-    color: white;
-}
-
-.s-testimonials__header, .s-testimonials__content {
-    position: relative;
-}
-
-.s-testimonials__header {
-    text-align: center;
-    margin-bottom: var(--vspace-2);
-}
-
-.s-testimonials__content>.column:first-child {
-    min-height: 0;
-    min-width: 0;
-}
-
-/* ------------------------------------------------------------------- 
- * ## swiper style overrides
- * ------------------------------------------------------------------- */
-.s-testimonials .swiper-container {
-    padding-bottom: var(--vspace-2_5);
-}
-
-.s-testimonials .swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 9px;
-}
-
-.s-testimonials .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    background: white;
-    opacity: 0.4;
-}
-
-.s-testimonials .swiper-pagination-bullet-active {
-    background: var(--color-1);
-    opacity: 1;
-}
-
-/* ------------------------------------------------------------------- 
- * ## testimonial slider 
- * ------------------------------------------------------------------- */
-.testimonial-slider {
-    position: relative;
-}
-
-.testimonial-slider p {
-    font-weight: 400;
-    font-size: 1.7rem;
-    line-height: var(--vspace-1);
-}
-
-.testimonial-slider__slide {
-    position: relative;
-}
-
-.testimonial-slider__author {
-    display: inline-block;
-    min-height: var(--vspace-2);
-    margin-bottom: var(--vspace-0_5);
-    padding-left: 8.8rem;
-    position: relative;
-}
-
-.testimonial-slider__avatar {
-    width: var(--vspace-2);
-    height: var(--vspace-2);
-    border-radius: 100%;
-    outline: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.testimonial-slider__cite {
-    display: block;
-}
-
-.testimonial-slider__cite strong, 
-.testimonial-slider__cite span {
-    font-style: normal;
-}
-
-.testimonial-slider__cite strong {
-    font-size: calc(var(--text-size) * 0.944);
-    line-height: var(--vspace-0_5);
-    color: white;
-}
-
-.testimonial-slider__cite span {
-    display: block;
-    font-size: calc(var(--text-size) * 0.778);
-    font-weight: 300;
-    line-height: var(--vspace-0_5);
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * testimonials
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
-    .testimonial-slider__slide {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .testimonial-slider__author {
-        padding-left: 6.8rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .testimonial-slider__author {
-        padding-left: 0;
-        margin-bottom: var(--vspace-0_5);
-        min-height: 0;
-        text-align: center;
-    }
-    .testimonial-slider__avatar {
-        display: inline-block !important;
-        margin: 0;
-        position: static;
-    }
-}
-
-
 /* ===================================================================
  * # contact
  *
@@ -4564,34 +4420,6 @@ input[type="button"].btn--primary:focus {
 .s-footer__social li {
     padding-left: 0;
     margin-right: 1.6rem;
-}
-
-/* ------------------------------------------------------------------- 
- * ## copyright
- * ------------------------------------------------------------------- */
-.ss-copyright {
-    z-index: 2;
-    -ms-flex-order: -1;
-    -webkit-box-ordinal-group: 0;
-    order: -1;
-    margin-right: auto;
-    position: relative;
-}
-
-.ss-copyright span {
-    font-size: var(--text-sm);
-    display: inline-block;
-}
-
-.ss-copyright span::after {
-    content: "|";
-    display: inline-block;
-    padding: 0 .8rem 0 1rem;
-    color: rgba(255, 255, 255, 0.1);
-}
-
-.ss-copyright span:last-child::after {
-    display: none;
 }
 
 /* ------------------------------------------------------------------- 
