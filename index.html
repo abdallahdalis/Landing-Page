@@ -75,7 +75,7 @@
                 <h1>I'm Abdallah Dalis.</h1>
 
                 <h3>
-                I'm a Chicago Based <span>, full stacked, data scientist</span>, <span> analyst</span> and <span>engineer</span> depicting the next best business move for me and my team. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                I'm a Chicago Based, <span> full stacked</span>, <span> data scientist</span>, <span> analyst</span> and <span>engineer</span> depicting the next best business move for me and my team. Let's <a class="smoothscroll" href="#about">start scrolling</a>
                 and learn more <a class="smoothscroll" href="#about">about me</a>.
                 </h3>
 
@@ -143,61 +143,102 @@
     </div> <!-- end row -->
 
 </section> <!-- end s-about -->
-
 <!-- Resume Section -->
 <section id="resume">
-    <div class="container">
-      <h1 class="section-heading">Experience</h1>
-      <div class="experience-item">
-        <a href="https://www.apple.com" target="_blank">
-          <img src="images/logos/apple-vector-silhouette-13.png" alt="Apple">
-        </a>
-        <h4>Apple</h4>
-        <p>September 2022 - April 2024</p>
-        <p class="lead">
-          - Engineered tailored technical support, assisting over 500+ clients monthly and maintaining a 95% customer satisfaction rate.<br>
-          - Assisted clients in maximizing utilization of Apple’s hardware and software on their devices.<br>
-          - Introduced new troubleshooting techniques and mentored 5 technicians, boosting team market standing by 15%.
-        </p>
-      </div>
-      <div class="experience-item">
-        <a href="https://www.dulyhealthandcare.com" target="_blank">
-          <img src="images/logos/images-3.png" alt="Duly Health and Care">
-        </a>
-        <h4>Duly Health and Care</h4>
-        <p>May 2023 - August 2023</p>
-        <p class="lead">
-          - Led a 5-member, cross-functional team to develop a Fee Schedule Automation Tool and Geographic Clinic Assignment, increasing revenue opportunity detection by 20%.<br>
-          - Designed clinic data with a structured tree format, improving query efficiency by 30%.<br>
-          - Identified 150+ at-risk patients using predictive analytics, improving care management by 20%.
-        </p>
-      </div>
-      <div class="experience-item">
-        <a href="https://headstarter.co" target="_blank">
-          <img src="images/logos/channels4_profile.png" alt="Headstarter AI">
-        </a>
-        <h4>Headstarter AI</h4>
-        <p>July 2024 - September 2024</p>
-        <p class="lead">
-          - Built 5+ AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI, AWS, and Firebase; achieving 98% accuracy as seen by 1000 users.<br>
-          - Developed projects, from design to deployment, with startup company ASL Aspire, leading 4+ engineers using MVC design patterns.<br>
-          - Coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns.
-        </p>
-      </div>
-      <div class="experience-item">
-        <a href="https://www.transitchicago.com" target="_blank">
-          <img src="images/logos/images-4.png" alt="Chicago Transit Authority">
-        </a>
-        <h4>Chicago Transit Authority</h4>
-        <p>May 2024 - Present</p>
-        <p class="lead">
-          - Improved Ventra revenue reconciliation accuracy by 20% through the development and implementation of advanced analytics algorithms.<br>
-          - Reduced manual processing time by 25% and increased reporting accuracy by 15% by automating and optimizing financial reporting and modeling.<br>
-          - Delivered a predictive Quarterly Investment Report, boosting investment performance by 10%.
-        </p>
-      </div>
-    </div>
-  </section>
+    <section id="experiences" class="container mt-20 flex flex-col">
+        <!-- Title and Subheading -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-white">Experiences</h2>
+            <p class="text-lg text-secondary mt-2">My professional life's timeline... have fun!</p>
+        </div>
+        <!-- Timeline -->
+        <div class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+            <!-- Apple Experience -->
+            <div id="apple" class="vertical-timeline-element">
+                <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(56, 62, 86);">
+                    <div class="flex justify-center items-center w-full h-full">
+                        <a href="https://www.apple.com" target="_blank">
+                            <img src="images/logos/apple-vector-silhouette-13.png" alt="Apple" class="icon-img">
+                        </a>
+                    </div>
+                </span>
+                <div class="vertical-timeline-element-content bounce-in" style="background: rgb(104, 33, 19); color: rgb(255, 255, 255);">
+                    <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
+                    <h3 class="text-white text-[24px] font-bold">Apple</h3>
+                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Technical Specialist<br>September 2022 - April 2024</p>
+                    <ul class="mt-5 list-disc ml-5 space-y-2">
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Engineered tailored technical support, assisting over 500+ clients monthly and maintaining a 95% customer satisfaction rate.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Assisted clients in maximizing utilization of Apple’s hardware and software on their devices.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Introduced new troubleshooting techniques and mentored 5 technicians, boosting team market standing by 15%.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Duly Health and Care Experience -->
+            <div id="duly-health" class="vertical-timeline-element">
+                <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(56, 62, 86);">
+                    <div class="flex justify-center items-center w-full h-full">
+                        <a href="https://www.dulyhealthandcare.com" target="_blank">
+                            <img src="images/logos/images-3.png" alt="Duly Health and Care" class="icon-img">
+                        </a>
+                    </div>
+                </span>
+                <div class="vertical-timeline-element-content bounce-in" style="background: rgb(104, 33, 19); color: rgb(255, 255, 255);">
+                    <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
+                    <h3 class="text-white text-[24px] font-bold">Duly Health and Care</h3>
+                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Data Scientist Intern<br>May 2023 - August 2023</p>
+                    <ul class="mt-5 list-disc ml-5 space-y-2">
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Led a 5-member, cross-functional team to develop a Fee Schedule Automation Tool and Geographic Clinic Assignment, increasing revenue opportunity detection by 20%.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Designed clinic data with a structured tree format, improving query efficiency by 30%.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Identified 150+ at-risk patients using predictive analytics, improving care management by 20%.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Headstarter AI Experience -->
+            <div id="headstarter" class="vertical-timeline-element">
+                <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(56, 62, 86);">
+                    <div class="flex justify-center items-center w-full h-full">
+                        <a href="https://www.headstarter.co" target="_blank">
+                            <img src="images/logos/channels4_profile.png" alt="Headstarter AI" class="icon-img">
+                        </a>
+                    </div>
+                </span>
+                <div class="vertical-timeline-element-content bounce-in" style="background: rgb(104, 33, 19); color: rgb(255, 255, 255);">
+                    <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
+                    <h3 class="text-white text-[24px] font-bold">Headstarter AI</h3>
+                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Software Engineer Fellow<br>July 2024 - September 2024</p>
+                    <ul class="mt-5 list-disc ml-5 space-y-2">
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Built 5+ AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI, AWS, and Firebase; achieving 98% accuracy as seen by 1000 users.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Developed projects, from design to deployment, with startup company ASL Aspire, leading 4+ engineers using MVC design patterns.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chicago Transit Authority Experience -->
+            <div id="cta" class="vertical-timeline-element">
+                <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(56, 62, 86);">
+                    <div class="flex justify-center items-center w-full h-full">
+                        <a href="https://www.transitchicago.com" target="_blank">
+                            <img src="images/logos/images-4.png" alt="Chicago Transit Authority" class="icon-img">
+                        </a>
+                    </div>
+                </span>
+                <div class="vertical-timeline-element-content bounce-in" style="background: rgb(104, 33, 19); color: rgb(255, 255, 255);">
+                    <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid rgb(35, 38, 49);"></div>
+                    <h3 class="text-white text-[24px] font-bold">Chicago Transit Authority</h3>
+                    <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">Data Analyst Intern<br>May 2024 - Present</p>
+                    <ul class="mt-5 list-disc ml-5 space-y-2">
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Improved Ventra revenue reconciliation accuracy by 20% through the development and implementation of advanced analytics algorithms.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Reduced manual processing time by 25% and increased reporting accuracy by 15% by automating and optimizing financial reporting and modeling.</li>
+                        <li class="text-white-100 text-[14px] pl-1 tracking-wider">Delivered a predictive Quarterly Investment Report using PowerPoint and Power BI, boosting investment performance by 10%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
 
 <!-- portfolio -->
 <section id="portfolio" class="s-portfolio target-section">
@@ -264,75 +305,101 @@
   
     </div> <!-- end folio-list -->
 </section>
+
 <!-- contact
     ================================================== -->
-<section id="contact" class="s-contact target-section">
-
-    <div class="row s-contact__header">
-        <div class="column large-12">
-            <h3 class="section-header-allcaps">Say Hello</h3>
-        </div>
-    </div>
-
-    <div class="row s-contact__content">
-
-        <div class="column large-12 medium-12">
-            <h4 class="huge-text">
-                Have a new project in mind? Let's collaborate and build something awesome.
-                Let's turn that idea into an even greater product :)
-            </h4>
-        </div>
-
-        <div class="column large-12 medium-12">
-            <div class="container" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-                <form action="action_page.php" method="post" style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
-                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                        <div style="flex: 1; min-width: 200px;">
-                            <label for="fname" style="font-size: 18px;">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="First name.." 
-                                   style="width: 100%; padding: 12px; font-size: 18px;">
-                        </div>
-                        <div style="flex: 1; min-width: 200px;">
-                            <label for="lname" style="font-size: 18px;">Last Name</label>
-                            <input type="text" id="lname" name="lastname" placeholder="Last name.." 
-                                   style="width: 100%; padding: 12px; font-size: 18px;">
-                        </div>
-                    </div>
-
-                    <label for="subject-toggle" style="font-size: 18px;">
-                        <input type="checkbox" id="subject-toggle" name="subject_toggle" style="margin-right: 10px;">
-                        Add Subject
-                    </label>
-                    
-                    <div id="subject-container" style="display: none; margin-top: 20px;">
-                        <label for="subject" style="font-size: 18px;">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Enter the subject.." 
-                               style="width: 100%; padding: 12px; font-size: 18px;">
-                    </div>
-
-                    <label for="message" style="font-size: 18px;">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message.." 
-                              style="width: 100%; height: 200px; padding: 12px; font-size: 18px;" required></textarea>
-
-                    <input type="submit" value="Submit" style="margin-top: 20px; padding: 12px 20px; font-size: 18px;">
-                </form>
+    <section id="contact" class="s-contact target-section">
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
             </div>
         </div>
-
-    </div> <!-- s-contact__content -->
-
-</section> <!-- end s-contact -->
-
-<script>
-    document.getElementById('subject-toggle').addEventListener('change', function() {
-        var subjectContainer = document.getElementById('subject-container');
-        if (this.checked) {
-            subjectContainer.style.display = 'block';
-        } else {
-            subjectContainer.style.display = 'none';
-        }
-    });
-</script>
+    
+        <div class="row s-contact__content">
+            <div class="column large-12 medium-12">
+                <h4 class="huge-text">
+                    Have a new project in mind? Let's collaborate and build something awesome.
+                    Let's turn that idea into an even greater product!
+                </h4>
+            </div>
+    
+            <div class="column large-12 medium-12">
+                <div class="container" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+                    <form id="contact-form" action="action_page.php" method="post" style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                            <div style="flex: 1; min-width: 200px;">
+                                <label for="fname" style="font-size: 18px;">First Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="First name.." style="width: 100%; padding: 12px; font-size: 18px;" required>
+                            </div>
+                            <div style="flex: 1; min-width: 200px;">
+                                <label for="lname" style="font-size: 18px;">Last Name</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Last name.." style="width: 100%; padding: 12px; font-size: 18px;" required>
+                            </div>
+                        </div>
+    
+                        <div style="flex: 1; min-width: 200px;">
+                            <label for="email" style="font-size: 18px;">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address.." style="width: 100%; padding: 12px; font-size: 18px;" required>
+                        </div>
+    
+                        <label for="subject-toggle" style="font-size: 18px;">
+                            <input type="checkbox" id="subject-toggle" name="subject_toggle" style="margin-right: 10px;">
+                            Add Subject
+                        </label>
+                        
+                        <div id="subject-container" style="display: none; margin-top: 20px;">
+                            <label for="subject" style="font-size: 18px;">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter the subject.." style="width: 100%; padding: 12px; font-size: 18px;">
+                        </div>
+    
+                        <label for="message" style="font-size: 18px;">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message.." style="width: 100%; height: 200px; padding: 12px; font-size: 18px;" required></textarea>
+    
+                        <div style="display: flex; align-items: center;">
+                            <input type="submit" value="Submit" style="margin-top: 20px; padding: 12px 20px; font-size: 18px;">
+                            <div id="form-notification" style="margin-left: 20px; display: none; font-size: 16px; color: #fff; padding: 10px; border-radius: 5px; position: relative;">
+                                <!-- Notification message will be inserted here -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- s-contact__content -->
+    </section> <!-- end s-contact -->
+    
+    <script>
+        document.getElementById('subject-toggle').addEventListener('change', function() {
+            var subjectContainer = document.getElementById('subject-container');
+            subjectContainer.style.display = this.checked ? 'block' : 'none';
+        });
+    
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+    
+            var formData = new FormData(this);
+            var notification = document.getElementById('form-notification');
+            
+            fetch('action_page.php', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.text())
+              .then(data => {
+                  notification.style.display = 'block';
+                  if (data.trim() === 'success') {
+                      notification.textContent = 'Thank you for contacting us! Your message has been sent.';
+                      notification.style.backgroundColor = '#4CAF50'; // Green for success
+                  } else {
+                      notification.textContent = 'Sorry, there was an error sending your message. Please try again.';
+                      notification.style.backgroundColor = '#f44336'; // Red for error
+                  }
+              })
+              .catch(error => {
+                  notification.style.display = 'block';
+                  notification.textContent = 'Sorry, there was an error sending your message. Please try again.';
+                  notification.style.backgroundColor = '#f44336'; // Red for error
+              });
+        });
+    </script>
 
     <!-- footer
     ================================================== -->
