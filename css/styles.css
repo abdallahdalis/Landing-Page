@@ -3961,11 +3961,11 @@
 
 /* Custom CSS */
 #experiences h2 {
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 4rem; /* Adjust size as needed */
 }
 
 #experiences p {
-    font-size: 1.50rem; /* Adjust size as needed */
+    font-size: 2rem; /* Adjust size as needed */
 }
 
 /* For smoother scrolling effect, if needed */
@@ -5625,7 +5625,7 @@ img,video {
 
 /* Portfolio list */
 .folio-list {
-    max-width: 1180px;
+    max-width: 1200px;
     margin-top: var(--vspace-2_5);
     display: flex;           /* Display as flex container */
     flex-wrap: wrap;         /* Allow items to wrap onto the next line */
@@ -5730,14 +5730,14 @@ img,video {
 
 .folio-item h4 {
     font-size: 3.5rem; /* Adjust font size as needed */
-    margin-bottom: 110px; /* Push the title upwards */
+    margin-bottom: 20px; /* Push the title upwards */
     color: #efcf03; /* Change the title color */
 }
 
 .folio-item p {
     font-size: 2.5rem; /* Increase font size for description */
     margin-top: 20px;  /* Push the description down */
-    color: white; /* Ensure the description text color is white */
+    color: rgb(255, 255, 255); /* Ensure the description text color is white */
 }
 /* ===================================================================
  * # contact
