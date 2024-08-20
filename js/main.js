@@ -192,41 +192,47 @@ const ssScrollSpy = function() {
     }; // end ssSwiper
 
 
-   /* Lightbox
-    * ------------------------------------------------------ */
-    const ssLightbox = function() {
+/* Lightbox
+ * ------------------------------------------------------ */
+const ssLightbox = function() {
+    const folioLinks = document.querySelectorAll('.folio-item a');
+    const modals = [];
 
-        const folioLinks = document.querySelectorAll('.folio-item a');
-        const modals = [];
+    folioLinks.forEach(function(link) {
+        let modalbox = link.getAttribute('href');
 
-        folioLinks.forEach(function(link) {
-            let modalbox = link.getAttribute('href');
-            let instance = basicLightbox.create(
-                document.querySelector(modalbox),
-                {
-                    onShow: function(instance) {
-                        //detect Escape key press
-                        document.addEventListener("keydown", function(evt) {
-                            evt = evt || window.event;
-                            if(evt.keyCode === 27){
-                            instance.close();
-                            }
-                        });
+        // Check if modalbox is a valid selector (e.g., starts with '#' for ID or '.' for class)
+        if (modalbox.startsWith('#') || modalbox.startsWith('.')) {
+            let element = document.querySelector(modalbox);
+
+            if (element) {
+                let instance = basicLightbox.create(
+                    element,
+                    {
+                        onShow: function(instance) {
+                            document.addEventListener("keydown", function(evt) {
+                                evt = evt || window.event;
+                                if (evt.keyCode === 27) {
+                                    instance.close();
+                                }
+                            });
+                        }
                     }
-                }
-            )
-            modals.push(instance);
-        });
+                );
+                modals.push(instance);
 
-        folioLinks.forEach(function(link, index) {
-            link.addEventListener("click", function(e) {
-                e.preventDefault();
-                modals[index].show();
-            });
-        });
-
-    };  // end ssLightbox
-
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    instance.show();
+                });
+            } else {
+                console.warn(`Element not found for selector: ${modalbox}`);
+            }
+        } else {
+            console.warn(`Invalid selector: ${modalbox}`);
+        }
+    });
+}; // end ssLightbox
 
    /* Alert boxes
     * ------------------------------------------------------ */

@@ -307,6 +307,7 @@
     </div> <!-- end folio-list -->
 </section>
 
+
 <!-- contact
     ================================================== -->
     <section id="contact" class="s-contact target-section">
@@ -326,7 +327,9 @@
     
             <div class="column large-12 medium-12">
                 <div class="container" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-                    <form id="contact-form" action="action_page.php" method="post" style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+                        <input type="hidden" name="access_key" value="3cc0ba64-a07b-43a0-b9d4-a4d533fc1ca4">
+                        
                         <div style="display: flex; flex-wrap: wrap; gap: 20px;">
                             <div style="flex: 1; min-width: 200px;">
                                 <label for="fname" style="font-size: 18px;">First Name</label>
@@ -372,33 +375,6 @@
         document.getElementById('subject-toggle').addEventListener('change', function() {
             var subjectContainer = document.getElementById('subject-container');
             subjectContainer.style.display = this.checked ? 'block' : 'none';
-        });
-    
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-    
-            var formData = new FormData(this);
-            var notification = document.getElementById('form-notification');
-            
-            fetch('action_page.php', {
-                method: 'POST',
-                body: formData
-            }).then(response => response.text())
-              .then(data => {
-                  notification.style.display = 'block';
-                  if (data.trim() === 'success') {
-                      notification.textContent = 'Thank you for contacting us! Your message has been sent.';
-                      notification.style.backgroundColor = '#4CAF50'; // Green for success
-                  } else {
-                      notification.textContent = 'Sorry, there was an error sending your message. Please try again.';
-                      notification.style.backgroundColor = '#f44336'; // Red for error
-                  }
-              })
-              .catch(error => {
-                  notification.style.display = 'block';
-                  notification.textContent = 'Sorry, there was an error sending your message. Please try again.';
-                  notification.style.backgroundColor = '#f44336'; // Red for error
-              });
         });
     </script>
 
