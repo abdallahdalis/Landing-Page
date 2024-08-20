@@ -12,6 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = isset($_POST['subject']) ? htmlspecialchars(trim($_POST['subject'])) : 'No Subject';
     $message = htmlspecialchars(trim($_POST['message']));
 
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
     // Email parameters
     $to = 'dalisabdallah@gmail.com'; // Your email address
     $email_subject = "Contact Form Submission: " . $subject;
@@ -28,10 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($success) {
         echo "Thank you for contacting me, $firstname! Your message has been sent.";
     } else {
+        error_log("Email failed to send to $to", 0);
         echo "Sorry, there was an error sending your message. Please try again.";
     }
 } else {
-    // Not a POST request
     echo "Invalid request.";
 }
-?>

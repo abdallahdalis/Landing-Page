@@ -3780,10 +3780,10 @@
   * ------------------------------------------------------------------- */
   .s-about {
     --color-border: var(--color-gray-16);
-    background: var(--color-gray-)
+    background: var(--color-gray-);
     background-size: cover;
     padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-4);
+    padding-bottom: calc(6 * var(--space));
     color: rgba(255, 255, 255, 0.4);
 }
  
@@ -3904,7 +3904,7 @@
  /* Custom styles for the about section */
  .s-about__content {
      margin-bottom: 0; /* Remove bottom margin if necessary */
-     padding-bottom: 0; /* Remove bottom padding if necessary */
+     padding-bottom: 9; /* Remove bottom padding if necessary */
  }
  
  /* ------------------------------------------------------------------- 
@@ -3953,9 +3953,18 @@
   * ------------------------------------------------------------------- */
  @import"https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap";
  
- #experiences {
-    padding-top: 80px; /* Adjust this value as needed */
-    margin-top: -80px; /* Adjust this value as needed */
+ .s-experiences {
+    --color-border: var(--color-gray-16);
+    background: var(--color-gray-1); /* Ensure this matches .s-about */
+    background-size: cover;
+    padding-top: calc(* var(--space));
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Adjusting the #experiences section */
+#experiences {
+    padding-top: calc(3 * var(--space)); /* Align with .s-about and .s-experiences */
+    margin-top: -calc(6 * var(--space)); /* Adjust to compensate for padding if necessary */
     position: relative;
 }
 
@@ -5607,19 +5616,16 @@ img,video {
     font-size: 4rem; /* Increase the font size */
     font-weight: bold; /* Make the text bold */
     text-align: center; /* Center the text */
-    margin-bottom: 30px; /* Add space below the title */
+    margin-bottom: 0px; /* Add space below the title */
     color: #ffffff; /* Adjust color if needed */
     line-height: 1.2; /* Set line height for better readability */
 }
 
-.s-portfolio p {
-    font-size: rem; /* Keep the paragraph font size consistent */
-}
 
 /* Portfolio styles */
 .s-portfolio {
     background-color: #141414;
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(2 * var(--space));
     padding-bottom: var(--vspace-5);
 }
 
@@ -5730,7 +5736,7 @@ img,video {
 
 .folio-item h4 {
     font-size: 3.5rem; /* Adjust font size as needed */
-    margin-bottom: 20px; /* Push the title upwards */
+    margin-bottom: 90px; /* Push the title upwards */
     color: #efcf03; /* Change the title color */
 }
 
@@ -5739,24 +5745,25 @@ img,video {
     margin-top: 20px;  /* Push the description down */
     color: rgb(255, 255, 255); /* Ensure the description text color is white */
 }
+
 /* ===================================================================
  * # contact
  *
  * ------------------------------------------------------------------- */
  .s-contact {
     background-color: var(--color-gray-18);
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(2 * var(--space));
     padding-bottom: var(--vspace-3_5);
 }
 
 .s-contact .section-header-allcaps {
     color: white;
-    margin-bottom: var(--vspace-2_5);
+    margin-bottom: var(--vspace-0_5);
 }
 
 .s-contact .huge-text {
     color: white;
-    margin-top: 0;
+    margin-bottom: 7rem;
     font-weight: 400;
     font-size: 4.6rem;
     line-height: 1.304;
@@ -5800,6 +5807,7 @@ img,video {
     color: #ffffff; /* Light color for better readability */
     margin-top: 0;
     margin-bottom: 1rem;
+    
 }
 
 /* New additions for form fields */
