@@ -27,7 +27,7 @@ You can view the landing page publicly at [abdallahdalis.com](https://abdallahda
 /Landing-Page
 ├── /css
 │   ├── styles.css          # Main stylesheet
-│   └── variables.css       # CSS variables for consistency
+│   └── vendors.css       # CSS variables for consistency
 ├── /js
 │   └── script.js           # JavaScript for interactivity
 ├── index.html              # Main HTML file
