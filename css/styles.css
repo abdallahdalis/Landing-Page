@@ -5735,13 +5735,13 @@ img,video {
 }
 
 .folio-item h4 {
-    font-size: 3.5rem; /* Adjust font size as needed */
+    font-size: 3rem; /* Adjust font size as needed */
     margin-bottom: 90px; /* Push the title upwards */
     color: #efcf03; /* Change the title color */
 }
 
 .folio-item p {
-    font-size: 2.5rem; /* Increase font size for description */
+    font-size: 2rem; /* Increase font size for description */
     margin-top: 20px;  /* Push the description down */
     color: rgb(255, 255, 255); /* Ensure the description text color is white */
 }
